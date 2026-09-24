@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 3 • Nagasaki</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#eef8ff;color:#1e293b;line-height:1.7}
+img{width:100%;display:block}
+a{text-decoration:none}
+
+.hero{
+height:420px;
+background:linear-gradient(rgba(5,30,60,.45),rgba(5,30,60,.45)),url('https://images.unsplash.com/photo-1566104769304-8d4f4ef47d39?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#fff;
+}
+.hero-content{padding:20px}
+.badge{display:inline-block;background:#4FC3F7;padding:8px 20px;border-radius:30px;font-size:.8rem;letter-spacing:1px}
+.hero h1{font-size:3rem;margin:18px 0 10px}
+.hero p{font-size:1.05rem}
+.hero-info{margin-top:20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.hero-info span{background:rgba(255,255,255,.2);backdrop-filter:blur(10px);padding:10px 18px;border-radius:30px;font-size:.9rem}
+
+.container{width:min(1050px,92%);margin:auto;padding:35px 0 60px}
+.card{background:#fff;padding:26px;border-radius:28px;margin-bottom:28px;box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.card h2{color:#0284C7;margin-bottom:18px}
+
+.route{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:15px;margin-top:20px}
+.route div{background:#E0F2FE;padding:18px;border-radius:20px;text-align:center;font-weight:600}
+.map-btn{display:inline-block;margin-top:20px;background:#0284C7;color:#fff;padding:14px 24px;border-radius:16px;font-weight:600}
+
+.timeline{border-left:4px solid #7DD3FC;padding-left:22px}
+.item{position:relative;margin-bottom:30px}
+.item:before{content:'';position:absolute;left:-34px;top:5px;width:18px;height:18px;border-radius:50%;background:#0284C7;border:4px solid #fff;box-shadow:0 0 0 3px #BAE6FD}
+.time{font-weight:700;color:#0284C7;margin-bottom:6px}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.tags span{background:#DBF4FF;color:#0369A1;padding:6px 12px;border-radius:30px;font-size:.8rem}
+
+.place{overflow:hidden;border-radius:24px;margin-bottom:28px;background:#fff;border:1px solid #E2E8F0;box-shadow:0 10px 20px rgba(0,0,0,.05)}
+.place img{height:240px;object-fit:cover}
+.place-body{padding:22px}
+.place h3{color:#0369A1;margin-bottom:8px}
+
+.food-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.food{background:#FFF8EB;padding:16px;border-radius:20px;border:1px solid #FFE5A8}
+.food img{height:160px;object-fit:cover;border-radius:14px;margin-bottom:12px}
+.food h4{color:#EA580C}
+
+.warning{background:#FEF2F2;border-left:6px solid #EF4444;padding:20px;border-radius:20px;margin-top:24px}
+.warning code{display:block;background:#fff;padding:12px;border-radius:12px;margin:12px 0;color:#B91C1C;font-weight:600}
+
+.weather{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px}
+.weather div{background:linear-gradient(180deg,#E0F2FE,#F8FDFF);padding:20px;border-radius:20px;text-align:center}
+.weather h3{color:#0284C7;margin-top:8px}
+
+.checklist li{list-style:none;background:#F8FBFF;padding:15px;border-radius:16px;margin-bottom:12px;border:1px solid #E0F2FE}
+
+.budget tr td{padding:14px 4px;border-bottom:1px solid #EDF2F7}
+.budget td:last-child{text-align:right;font-weight:600;color:#0284C7}
+
+.tip{background:linear-gradient(135deg,#38BDF8,#2563EB);color:#fff;padding:30px;border-radius:30px;text-align:center;box-shadow:0 18px 30px rgba(37,99,235,.25)}
+.tip strong{color:#FEF08A}
+
+footer{text-align:center;padding:40px 0;color:#64748B}
+
+@media(max-width:768px){
+.hero{height:320px}
+.hero h1{font-size:2rem}
+.place img{height:190px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="hero-content">
+<span class="badge">🌊 DAY 3 • NAGASAKI ROAD TRIP</span>
+<h1>Nagasaki One Day Trip 🇯🇵</h1>
+<p>European Town • Harbor • Chinatown • Sunset • Night View</p>
+<div class="hero-info">
+<span>📅 28 Sep 2026</span>
+<span>🚗 Rental Car</span>
+<span>🌅 Golden Hour Mission</span>
+</div>
+</div>
+</header>
+
+<div class="container">
+
+<section class="card">
+<h2>🗺️ Today's Route</h2>
+<p><b>Hakata → Meganebashi → Glover Garden → Oura Cathedral → Shinchi Chinatown → Mt.Inasa → Hakata</b></p>
+<a class="map-btn" href="https://maps.app.goo.gl/zawZFBdds9pgLfV19?g_st=il/" target="_blank">📍 Open Google Maps Route</a>
+<div class="route">
+<div>🚗<br>300 KM</div>
+<div>⏱️<br>Drive 4 Hours</div>
+<div>🌅<br>Sunset 17:55</div>
+<div>🌃<br>Night View 18:20</div>
+</div>
+</section>
+
+<section class="card">
+<h2>☁️ Weather Mission</h2>
+<div class="weather">
+<div>🌤️<h3>27°C</h3><p>Day</p></div>
+<div>🌙<h3>22°C</h3><p>Evening</p></div>
+<div>💨<h3>10 km/h</h3><p>Wind</p></div>
+<div>🌧️<h3>Low Chance</h3><p>Rain</p></div>
+</div>
+</section>
+
+<section class="card">
+<h2>⏰ Timeline</h2>
+<div class="timeline">
+<div class="item"><div class="time">07:30</div><h3>🚗 Leave Hakata</h3><p>ขับรถจาก Hakata ไป Nagasaki ประมาณ 2 ชั่วโมง</p></div>
+<div class="item"><div class="time">10:00</div><h3>🌉 Meganebashi</h3><p>สะพานหินอายุกว่า 380 ปี ถ่าย Reflection Shot ริมแม่น้ำ</p><div class="tags"><span>📸 Reflection</span><span>👓 Historic</span></div></div>
+<div class="item"><div class="time">11:00</div><h3>🌿 Glover Garden</h3><p>สวนยุโรป วิวท่าเรือ บ้านสไตล์อังกฤษ ดอกไม้เต็มสวน</p><div class="tags"><span>🌷 Garden</span><span>🏛️ Heritage</span></div></div>
+<div class="item"><div class="time">12:30</div><h3>⛪ Oura Cathedral</h3><p>โบสถ์คริสต์ที่เก่าแก่ที่สุดแห่งหนึ่งของญี่ปุ่น</p></div>
+<div class="item"><div class="time">14:00</div><h3>🏮 Shinchi Chinatown</h3><p>Mission กิน Champon + Kakuni Bun + ซื้อของฝาก</p></div>
+<div class="item"><div class="time">17:30</div><h3>🌃 Mt. Inasa</h3><p>ขึ้นก่อน Sunset 30 นาที รอไฟเมืองเปิด</p></div>
+<div class="item"><div class="time">20:30</div><h3>🏨 Return Hakata</h3><p>กลับโรงแรม เตรียมกระเป๋าวันกลับไทย ✈️</p></div>
+</div>
+</section>
+
+<h2 style="margin-bottom:18px;color:#0284C7">📍 Explore Nagasaki</h2>
+
+<div class="place">
+<img src="https://images.unsplash.com/photo-1614359835514-92f8ba196357?auto=format&fit=crop&w=1400&q=80">
+<div class="place-body"><h3>🌉 Meganebashi Bridge</h3><p>แลนด์มาร์กเมืองนางาซากิ สะพานหินโค้งคู่ที่มีเงาสะท้อนเหมือนแว่นตา ถ่ายรูปตอนเช้าสวยสุด ✨</p></div></div>
+
+<div class="place">
+<img src="https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=1400&q=80">
+<div class="place-body"><h3>🌿 Glover Garden</h3><p>สวนสไตล์ยุโรป วิวอ่าวนางาซากิ บ้านอังกฤษ ดอกไม้ และจุดชมวิวสุดโรแมนติก 🌷</p></div></div>
+
+<div class="place">
+<img src="https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1400&q=80">
+<div class="place-body"><h3>⛪ Oura Cathedral</h3><p>โบสถ์คริสต์สีขาว สถาปัตยกรรมโกธิก อยู่ในพื้นที่ UNESCO</p></div></div>
+
+<div class="place">
+<img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1400&q=80">
+<div class="place-body"><h3>🏮 Shinchi Chinatown</h3><p>ถนนโคมแดง ร้านอาหารจีน ของหวาน และของฝากเยอะมาก</p></div></div>
+
+<div class="place">
+<img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1400&q=80">
+<div class="place-body"><h3>🌃 Mt. Inasa Observatory</h3><p>หนึ่งในวิวกลางคืนที่สวยที่สุดของญี่ปุ่น ได้ทั้ง Sunset และ Night View ในรอบเดียว 🌅✨</p></div></div>
+
+<section class="card">
+<h2>🍜 Must Eat in Nagasaki</h2>
+<div class="food-grid">
+<div class="food"><img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=600&q=80"><h4>🍜 Nagasaki Champon</h4><p>ราเมนซุปเข้มข้น ใส่ผักเยอะ (มุกบอก <b>ไม่ใส่กุ้ง</b>)</p></div>
+<div class="food"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80"><h4>🥟 Kakuni Manju</h4><p>ซาลาเปาหมูสามชั้นตุ๋น นุ่มมากกก</p></div>
+<div class="food"><img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80"><h4>🍰 Castella</h4><p>ของฝากอันดับ 1 ของ Nagasaki</p></div>
+<div class="food"><img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=600&q=80"><h4>🍦 Milk Soft Serve</h4><p>ไอศกรีมเดินกินใน Chinatown</p></div>
+</div>
+<div class="warning"><h3>🦐 Allergy Note (ของมุก)</h3><p>มุกแพ้กุ้ง อย่าลืมบอกพนักงานทุกครั้งก่อนสั่งอาหาร</p><code>エビアレルギーがあります。</code><p><b>Ebi arerugii ga arimasu.</b></p><p>I have a shrimp allergy.</p></div>
+</section>
+
+<section class="card"><h2>🎁 Souvenir Mission</h2><table class="budget"><tr><td>🍰 Fukusaya Castella</td><td>¥700–1,500</td></tr><tr><td>🥟 Kakuni Manju</td><td>¥500–900</td></tr><tr><td>🍊 Biwa Jelly</td><td>¥600–1,200</td></tr><tr><td>🏮 Lantern Keychain</td><td>¥300–800</td></tr></table></section>
+
+<section class="card"><h2>💴 Budget</h2><table class="budget"><tr><td>🚗 Fuel + Toll</td><td>¥3,500</td></tr><tr><td>🌿 Glover Garden</td><td>¥1,300</td></tr><tr><td>⛪ Oura Cathedral</td><td>¥1,000</td></tr><tr><td>🍜 Lunch</td><td>¥1,500</td></tr><tr><td>☕ Cafe</td><td>¥800</td></tr><tr><td>🛍️ Souvenir</td><td>¥1,000+</td></tr><tr><td><b>💰 Total</b></td><td><b>¥9,100+</b></td></tr></table></section>
+
+<section class="card"><h2>📷 Photo Mission</h2><ul class="checklist"><li>☐ 🌉 Meganebashi Reflection Shot</li><li>☐ 🌿 Glover Garden Balcony View</li><li>☐ ⛪ Oura Cathedral Front Gate</li><li>☐ 🏮 Chinatown Lantern Street</li><li>☐ 🍜 Champon Bowl</li><li>☐ 🍰 Castella Souvenir</li><li>☐ 🌅 Mt. Inasa Sunset</li><li>☐ 🌃 Mt. Inasa Night View</li></ul></section>
+
+<section class="card"><h2>🎒 Today's Checklist</h2><ul class="checklist"><li>☐ 🛂 Passport</li><li>☐ 🚗 International Driving Permit</li><li>☐ 📄 Rental Car Documents</li><li>☐ 🔋 Power Bank</li><li>☐ 📷 Camera Battery</li><li>☐ 💧 Water Bottle (2L Mission)</li><li>☐ 🧴 Sunscreen</li><li>☐ 🧥 Light Jacket</li><li>☐ 💴 Cash ¥5,000+</li></ul></section>
+
+<section class="tip"><h2>🌅 Golden Hour Mission</h2><p>🚗 ขึ้น Mt. Inasa เวลา <strong>17:15</strong></p><p>🌅 Sunset เวลา <strong>17:55</strong></p><p>🌃 เมืองเริ่มเปิดไฟประมาณ <strong>18:20–18:30</strong></p><br><p>✨ ได้ทั้ง Sunset และ Night View ในรอบเดียว!</p></section>
+
+<footer>🇯🇵 Fukuoka Road Trip Guide • Day 3 Nagasaki • Made with ❤️ by Mook</footer>
+
+</div>
+</body>
+</html>

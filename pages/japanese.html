@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🇯🇵 Japanese Guide | Mook Fukuoka 2026</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="jp-hero">
+  <div class="hero-content">
+    <p class="date">Fukuoka Survival Guide</p>
+    <h1>🇯🇵 Japanese Phrasebook</h1>
+    <p class="subtitle">พูดได้ทันที • Copy ได้ • ฟังเสียงได้</p>
+  </div>
+</header>
+
+<main class="container">
+
+<a href="../index.html" class="back-btn">← กลับหน้าหลัก</a>
+
+<!-- Search -->
+<div class="search-box">
+  <input id="searchInput" type="text" placeholder="🔍 ค้นหา เช่น ห้องน้ำ, ขอบคุณ, แพ้กุ้ง...">
+</div>
+
+<!-- Categories -->
+<div class="category-bar">
+  <button class="active" onclick="filterCategory('all')">ทั้งหมด</button>
+  <button onclick="filterCategory('food')">🍜 ร้านอาหาร</button>
+  <button onclick="filterCategory('train')">🚉 รถไฟ</button>
+  <button onclick="filterCategory('shopping')">🛍️ ช้อปปิ้ง</button>
+  <button onclick="filterCategory('hospital')">🏥 โรงพยาบาล</button>
+</div>
+
+<section id="phraseContainer">
+
+<!-- FOOD -->
+<div class="phrase-card-item" data-category="food">
+  <div class="phrase-top">
+    <span class="tag">🍜 Food</span>
+    <button class="fav-btn">⭐</button>
+  </div>
+
+  <h3>ฉันแพ้กุ้ง</h3>
+  <p class="jp">私はエビアレルギーがあります。</p>
+  <small>I have a shrimp allergy.</small>
+
+  <div class="actions">
+    <button onclick="copyPhrase('私はエビアレルギーがあります。')">📋 Copy</button>
+    <button onclick="speakJapanese('私はエビアレルギーがあります。')">🔊 Speak</button>
+  </div>
+</div>
+
+<div class="phrase-card-item" data-category="food">
+  <div class="phrase-top">
+    <span class="tag">🍜 Food</span>
+    <button class="fav-btn">⭐</button>
+  </div>
+
+  <h3>ขอน้ำเปล่า</h3>
+  <p class="jp">お水をお願いします。</p>
+  <small>Water, please.</small>
+
+  <div class="actions">
+    <button onclick="copyPhrase('お水をお願いします。')">📋 Copy</button>
+    <button onclick="speakJapanese('お水をお願いします。')">🔊 Speak</button>
+  </div>
+</div>
+
+<div class="phrase-card-item" data-category="food">
+  <div class="phrase-top">
+    <span class="tag">🍜 Food</span>
+    <button class="fav-btn">⭐</button>
+  </div>
+
+  <h3>ไม่ใส่น้ำตาล</h3>
+  <p class="jp">砂糖なしでお願いします。</p>
+  <small>No sugar, please.</small>
+
+  <div class="actions">
+    <button onclick="copyPhrase('砂糖なしでお願いします。')">📋 Copy</button>
+    <button onclick="speakJapanese('砂糖なしでお願いします。')">🔊 Speak</button>
+  </div>
+</div>
+
+<!-- TRAIN -->
+<div class="phrase-card-item" data-category="train">
+  <div class="phrase-top">
+    <span class="tag">🚉 Train</span>
+    <button class="fav-btn">⭐</button>
+  </div>
+
+  <h3>สนามบินไปทางไหน?</h3>
+  <p class="jp">空港はどこですか？</p>
+  <small>Where is the airport?</small>
+
+  <div class="actions">
+    <button onclick="copyPhrase('空港はどこですか？')">📋 Copy</button>
+    <button onclick="speakJapanese('空港はどこですか？')">🔊 Speak</button>
+  </div>
+</div>
+
+<div class="phrase-card-item" data-category="train">
+  <div class="phrase-top">
+    <span class="tag">🚉 Train</span>
+    <button class="fav-btn">⭐</button>
+  </div>
+
+  <h3>รถไฟขบวนนี้ไปฮากาตะไหม?</h3>
+  <p class="jp">この電車は博多へ行きますか？</p>
+  <small>Does this train go to Hakata?</small>
+
+  <div class="actions">
+    <button onclick="copyPhrase('この電車は博多へ行きますか？')">📋 Copy</button>
+    <button onclick="speakJapanese('この電車は博多へ行きますか？')">🔊 Speak</button>
+  </div>
+</div>
+
+<!-- SHOPPING -->
+<div class="phrase-card-item" data-category="shopping">
+  <div class="phrase-top">
+    <span class="tag">🛍️ Shopping</span>
+    <button class="fav-btn">⭐</button>
+  </div>
+
+  <h3>อันนี้ราคาเท่าไร?</h3>
+  <p class="jp">これはいくらですか？</p>
+  <small>How much is this?</small>
+
+  <div class="actions">
+    <button onclick="copyPhrase('これはいくらですか？')">📋 Copy</button>
+    <button onclick="speakJapanese('これはいくらですか？')">🔊 Speak</button>
+  </div>
+</div>
+
+<div class="phrase-card-item" data-category="shopping">
+  <div class="phrase-top">
+    <span class="tag">🛍️ Shopping</span>
+    <button class="fav-btn">⭐</button>
+  </div>
+
+  <h3>Tax Free ได้ไหม?</h3>
+  <p class="jp">免税できますか？</p>
+  <small>Can I get Tax Free?</small>
+
+  <div class="actions">
+    <button onclick="copyPhrase('免税できますか？')">📋 Copy</button>
+    <button onclick="speakJapanese('免税できますか？')">🔊 Speak</button>
+  </div>
+</div>
+
+<!-- HOSPITAL -->
+<div class="phrase-card-item" data-category="hospital">
+  <div class="phrase-top">
+    <span class="tag">🏥 Hospital</span>
+    <button class="fav-btn">⭐</button>
+  </div>
+
+  <h3>ฉันปวดท้อง</h3>
+  <p class="jp">お腹が痛いです。</p>
+  <small>My stomach hurts.</small>
+
+  <div class="actions">
+    <button onclick="copyPhrase('お腹が痛いです。')">📋 Copy</button>
+    <button onclick="speakJapanese('お腹が痛いです。')">🔊 Speak</button>
+  </div>
+</div>
+
+<div class="phrase-card-item" data-category="hospital">
+  <div class="phrase-top">
+    <span class="tag">🏥 Hospital</span>
+    <button class="fav-btn">⭐</button>
+  </div>
+
+  <h3>ช่วยเรียกรถพยาบาล</h3>
+  <p class="jp">救急車を呼んでください。</p>
+  <small>Please call an ambulance.</small>
+
+  <div class="actions">
+    <button onclick="copyPhrase('救急車を呼んでください。')">📋 Copy</button>
+    <button onclick="speakJapanese('救急車を呼んでください。')">🔊 Speak</button>
+  </div>
+</div>
+
+</section>
+
+</main>
+
+<div id="toast">คัดลอกแล้ว 🇯🇵</div>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

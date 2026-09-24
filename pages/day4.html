@@ -1,0 +1,285 @@
+<!-- ================= DAY 4 HERO + VIDEO ================= -->
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{
+    background:#F4FAFF;
+    color:#1E293B;
+    line-height:1.7;
+}
+
+/* ===== HERO ===== */
+
+.hero-day4{
+    position:relative;
+    height:430px;
+    overflow:hidden;
+    border-radius:0 0 40px 40px;
+}
+
+.hero-day4 img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(0,35,70,.35),rgba(15,23,42,.55));
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:25px;
+}
+
+.day-pill{
+    display:inline-block;
+    background:#E0F2FE;
+    color:#0369A1;
+    padding:8px 18px;
+    border-radius:999px;
+    font-size:.8rem;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.hero-overlay h1{
+    font-size:2.9rem;
+    margin:18px 0 12px;
+}
+
+.hero-overlay p{
+    max-width:650px;
+    font-size:1rem;
+}
+
+.hero-info{
+    margin-top:24px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-info span{
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(10px);
+    padding:10px 16px;
+    border-radius:999px;
+    font-size:.85rem;
+}
+
+/* ===== VIDEO MEMORY ===== */
+
+.memory-wrapper{
+    max-width:980px;
+    margin:-70px auto 40px;
+    padding:0 20px;
+    position:relative;
+    z-index:5;
+}
+
+.memory-card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.memory-header{
+    background:linear-gradient(90deg,#38BDF8,#2563EB);
+    color:white;
+    padding:18px 22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.memory-header h2{
+    font-size:1.15rem;
+}
+
+.memory-header span{
+    font-size:.8rem;
+    opacity:.9;
+}
+
+.video-box{
+    position:relative;
+    padding:18px;
+    background:#F8FAFC;
+}
+
+.video-box video{
+    width:100%;
+    border-radius:20px;
+    background:black;
+}
+
+.stickers{
+    position:absolute;
+    top:32px;
+    left:32px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.stickers div{
+    background:rgba(255,255,255,.92);
+    color:#075985;
+    padding:8px 12px;
+    border-radius:999px;
+    font-size:.72rem;
+    font-weight:600;
+    backdrop-filter:blur(10px);
+}
+
+.memory-content{
+    padding:22px;
+}
+
+.memory-content h3{
+    color:#0369A1;
+    margin-bottom:10px;
+}
+
+.note{
+    margin-top:18px;
+    background:#EFF6FF;
+    border-left:5px solid #38BDF8;
+    padding:16px;
+    border-radius:16px;
+    color:#075985;
+}
+
+.trip-ending{
+    margin-top:20px;
+    text-align:center;
+    color:#2563EB;
+    font-weight:600;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.hero-day4{
+    height:330px;
+}
+
+.hero-overlay h1{
+    font-size:2rem;
+}
+
+.memory-wrapper{
+    margin-top:-50px;
+    padding:0 15px;
+}
+
+.memory-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:4px;
+}
+
+.stickers{
+    top:24px;
+    left:24px;
+}
+
+.stickers div{
+    font-size:.65rem;
+}
+
+}
+</style>
+
+<!-- ============ HERO ============ -->
+
+<header class="hero-day4">
+
+    <!-- เปลี่ยนเป็นรูปที่มุกชอบได้ -->
+    <img src="images/fukuoka-airport.jpg" alt="Fukuoka Airport">
+
+    <div class="hero-overlay">
+
+        <span class="day-pill">🇯🇵 DAY 4 • GOODBYE JAPAN ✈️</span>
+
+        <h1>☀️ Last Morning in Fukuoka</h1>
+
+        <p>
+            เช้าวันสุดท้ายของทริป เดินออกจาก Third Place Hakata
+            พร้อมกระเป๋าเดินทาง เพื่อไปสนามบิน Fukuoka และบินกลับประเทศไทย 🇹🇭
+        </p>
+
+        <div class="hero-info">
+            <span>📅 29 September 2026</span>
+            <span>🕔 Leave Hotel 05:15</span>
+            <span>✈️ AirAsia 08:15</span>
+            <span>💙 Goodbye Japan</span>
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ============ MORNING MEMORY ============ -->
+
+<section class="memory-wrapper">
+
+    <div class="memory-card">
+
+        <div class="memory-header">
+            <h2>🎥 Morning Memory</h2>
+            <span>Third Place Hakata • 05:15 AM</span>
+        </div>
+
+        <div class="video-box">
+
+            <div class="stickers">
+                <div>📍 Third Place Hakata</div>
+                <div>🕔 05:15 AM</div>
+                <div>✈️ Fukuoka Airport</div>
+            </div>
+
+            <!-- วิดีโอของมุก -->
+            <video controls playsinline poster="images/fukuoka-airport.jpg">
+                <source src="images/IMG_6725.MP4" type="video/mp4">
+                เบราว์เซอร์ไม่รองรับวิดีโอ
+            </video>
+
+        </div>
+
+        <div class="memory-content">
+
+            <h3>🌤️ Last Walk Before Going Home</h3>
+
+            <p>
+                เช้าวันสุดท้ายของทริป เดินลากกระเป๋าออกจาก
+                <strong>Third Place Hakata</strong> ไปสถานี Hakata
+                เพื่อขึ้นรถไฟไปสนามบิน Fukuoka ✈️
+            </p>
+
+            <div class="note">
+                💙 <strong>Memory Note</strong><br>
+                “เช้าวันสุดท้ายของฟุกุโอกะ เมืองเงียบ อากาศเย็น เดินลากกระเป๋าไปขึ้นรถไฟ
+                เป็นโมเมนต์ที่รู้สึกทั้งมีความสุขและเสียดายนิด ๆ 🥹”
+            </div>
+
+            <div class="trip-ending">
+                🌸 Thank you, Japan.<br>
+                See you again 🇯🇵💙
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
